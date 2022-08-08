@@ -29,7 +29,6 @@ public class CamperService {
     public Camper updateCamper(Integer id, Camper camperData) {
         Camper camper = camperRepository.findById(id).get();
 //        camper.setName(camperData.getName());
-//        camper.setEmail(camperData.getEmail());
         return camperRepository.save(camper);
     }
 

@@ -29,7 +29,6 @@ public class SignupService {
     public Signup updateSignup(Integer id, Signup signupData) {
         Signup signup = signupRepository.findById(id).get();
 //        signup.setName(signupData.getName());
-//        signup.setEmail(signupData.getEmail());
         return signupRepository.save(signup);
     }
 
