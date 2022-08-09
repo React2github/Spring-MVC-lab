@@ -29,7 +29,6 @@ public class ActivityService {
     public Activity updateActivity(Integer id, Activity activityData) {
         Activity activity = activityRepository.findById(id).get();
 //        activity.setName(activityData.getName());
-//        activity.setEmail(activityData.getEmail());
         return activityRepository.save(activity);
     }
 

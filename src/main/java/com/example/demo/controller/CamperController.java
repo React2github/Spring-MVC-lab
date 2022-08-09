@@ -23,6 +23,7 @@ public class CamperController {
         return ResponseEntity.ok(newCamper);
     }
 
+
     @GetMapping("/campers")
     public List<Camper> readCampers() {
         return camperService.getCampers();
